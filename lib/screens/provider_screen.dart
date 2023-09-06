@@ -33,8 +33,8 @@ class _ProviderScreenState extends State<ProviderScreen> {
           final model = value.model;
           return ListView.builder(
             itemCount: model.length,
-            itemBuilder: (context, index) {
-              final models = model[index];
+            itemBuilder: (context, i) {
+              final models = model[i];
               return  Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                 child: Card(

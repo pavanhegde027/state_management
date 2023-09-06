@@ -31,9 +31,9 @@ class _RiverpodScreenState extends ConsumerState<RiverpodScreen> {
                 return Expanded(
                   child: ListView.builder(
                     itemCount: data.userModel.length,
-                    itemBuilder: (context, index) {
+                    itemBuilder: (context, i) {
 
-                      final listData = data.userModel[index];
+                      final listData = data.userModel[i];
 
                       return  Padding(
                         padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),

@@ -42,7 +42,7 @@ class BlocScreen extends StatelessWidget {
             User userList = state.users;
             return ListView.builder(
                 itemCount: userList.userModel.length,
-                itemBuilder: (_, index) {
+                itemBuilder: (_, i) {
                   return Padding(
                     padding:
                         const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
@@ -50,16 +50,16 @@ class BlocScreen extends StatelessWidget {
                         color: Colors.black,
                         child: ListTile(
                             title: Text(
-                              '${userList.userModel[index].firstName}  ${userList.userModel[index].lastName}',
+                              '${userList.userModel[i].firstName}  ${userList.userModel[i].lastName}',
                               style: const TextStyle(color: Colors.white),
                             ),
                             subtitle: Text(
-                              '${userList.userModel[index].email}',
+                              '${userList.userModel[i].email}',
                               style: const TextStyle(color: Colors.white),
                             ),
                             leading: CircleAvatar(
                               backgroundImage: NetworkImage(
-                                  userList.userModel[index].avatar.toString()),
+                                  userList.userModel[i].avatar.toString()),
                             ))),
                   );
                 });
