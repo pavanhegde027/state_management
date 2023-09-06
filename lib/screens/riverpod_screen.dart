@@ -66,7 +66,7 @@ class _RiverpodScreenState extends ConsumerState<RiverpodScreen> {
                 style: Theme.of(context)
                     .textTheme
                     .bodyText1
-                    ?.copyWith(color: Colors.yellow),
+                    ?.copyWith(color: Colors.black),
               ),
             ),
               loading: () => Center(

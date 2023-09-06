@@ -7,7 +7,7 @@ import '../model/user_model.dart';
 @immutable
 abstract class UserState extends Equatable {}
 
-//data loading state
+
 class UserLoadingState extends UserState {
   @override
   List<Object?> get props => [];
@@ -26,9 +26,4 @@ class UserErrorState extends UserState {
   List<Object?> get props => [error];
 }
 
-
-//data loaded state 
-
-
-//data loading error state 
 
